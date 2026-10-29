@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>층간소음 기록소 개인정보 처리방침 · Noise Log Privacy Policy</title>
+<meta name="description" content="층간소음 기록소(Noise Log) 앱의 개인정보 처리방침 / Privacy Policy for the Noise Log app">
+<style>
+  :root {
+    --bg: #F6F8FB;
+    --card: #FFFFFF;
+    --text: #1B2A4A;
+    --muted: #5A6782;
+    --line: #E1E6EF;
+    --accent: #0E8C74;
+    --accent-soft: #E3F6F1;
+    --todo: #FFF4CC;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0F1729;
+      --card: #17223A;
+      --text: #E6ECF7;
+      --muted: #A3AEC6;
+      --line: #263452;
+      --accent: #5EE0C4;
+      --accent-soft: #163A3A;
+      --todo: #4A3F12;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Segoe UI", Roboto, sans-serif;
+    line-height: 1.7;
+    font-size: 16px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+  header { margin-bottom: 20px; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 15px; color: var(--muted); }
+  .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
+  h1 { font-size: 26px; line-height: 1.35; margin: 10px 0 6px; }
+  .meta { color: var(--muted); font-size: 14px; }
+  .lang { display: inline-flex; gap: 6px; margin-top: 16px; background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 4px; }
+  .lang button {
+    border: 0; background: transparent; color: var(--muted); font: inherit; font-size: 14px; font-weight: 600;
+    padding: 6px 14px; border-radius: 999px; cursor: pointer;
+  }
+  .lang button[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent); }
+  section.card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 20px 20px 8px; margin: 14px 0;
+  }
+  h2 { font-size: 18px; margin: 0 0 10px; }
+  h3 { font-size: 16px; margin: 16px 0 6px; }
+  p, li { color: var(--text); }
+  ul { padding-left: 20px; margin: 0 0 12px; }
+  li { margin: 4px 0; }
+  .summary { background: var(--accent-soft); border: 0; }
+  .summary li { margin: 6px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 6px 0 14px; font-size: 14px; }
+  th, td { text-align: left; vertical-align: top; padding: 8px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; }
+  .table-scroll { overflow-x: auto; }
+  a { color: var(--accent); }
+  .todo { background: var(--todo); padding: 0 4px; border-radius: 4px; }
+  footer { color: var(--muted); font-size: 13px; margin-top: 28px; text-align: center; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand"><span class="dot"></span><span>susuim</span></div>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="ko" aria-pressed="true">한국어</button>
+      <button type="button" data-lang="en" aria-pressed="false">English</button>
+    </div>
+  </header>
+
+  <!-- ===================== 한국어 ===================== -->
+  <main id="ko" lang="ko">
+    <h1>층간소음 기록소 개인정보 처리방침</h1>
+    <p class="meta">시행일: 2026-10-30 · 개발자: susuim</p>
+
+    <section class="card summary">
+      <h2>한눈에 보기</h2>
+      <ul>
+        <li>소음 측정값과 소음 클립(녹음)은 <strong>이 기기에만 저장</strong>되며, 개발자 서버로 전송되지 않습니다.</li>
+        <li>회원가입이나 로그인이 없고, 이름·전화번호·주소 같은 정보를 수집하지 않습니다.</li>
+        <li>무료 제공을 위해 Google AdMob 광고를 표시하며, 광고 제공 과정에서 Google이 광고 식별자 등 기기 정보를 수집할 수 있습니다.</li>
+        <li>앱 안에서 언제든 기록을 삭제할 수 있고, 앱을 삭제하면 기기에 저장된 모든 데이터가 함께 지워집니다.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>1. 처리하는 정보와 목적</h2>
+      <div class="table-scroll">
+      <table>
+        <tr><th>항목</th><th>목적</th><th>저장 위치</th></tr>
+        <tr><td>마이크 입력(소리)</td><td>실시간 소음 레벨(dB) 계산</td><td>기기 내에서 실시간 처리 후 즉시 폐기. 원본 소리를 계속 저장하지 않음</td></tr>
+        <tr><td>소음 측정값(1초 단위 레벨, 1분 통계, 충격음 기록), 기록 시각</td><td>소음 기록, 기준 초과 판정, 통계·리포트 생성</td><td>기기 내부 저장소</td></tr>
+        <tr><td>소음 클립(충격음 전후 약 5초 녹음)</td><td>사용자가 소음 종류를 직접 확인하고 태그를 지정</td><td>기기 내부 저장소. 설정에서 끌 수 있음</td></tr>
+        <tr><td>설정값(판정 기준, 보정값, 언어, 테마 등), 사용자가 입력한 태그·메모·주소</td><td>앱 기능 제공, 리포트 작성</td><td>기기 내부 저장소</td></tr>
+        <tr><td>기기 모델, 운영체제 버전, 사용된 마이크 종류</td><td>측정 조건 기록과 보정(리포트에 표시)</td><td>기기 내부 저장소</td></tr>
+      </table>
+      </div>
+      <p>위 정보는 개발자에게 전송되지 않으며, 개발자는 이 정보에 접근할 수 없습니다. 기기 백업(Android 클라우드 백업)에도 포함되지 않도록 설정되어 있습니다.</p>
+    </section>
+
+    <section class="card">
+      <h2>2. 광고(Google AdMob)</h2>
+      <p>앱을 무료로 제공하기 위해 Google AdMob 광고를 기록·통계·리포트 화면 등에 표시합니다. 소음 측정 화면과 수면 모드 화면에는 광고를 표시하지 않습니다.</p>
+      <p>광고 제공 과정에서 Google은 다음과 같은 정보를 수집·처리할 수 있습니다.</p>
+      <ul>
+        <li>광고 식별자(Android 광고 ID), 기기 및 앱 정보, IP 주소로 추정한 대략적 위치</li>
+        <li>광고 노출·클릭 등 광고와 관련된 상호작용 정보</li>
+      </ul>
+      <p>이 정보는 광고 제공, 광고 성과 측정, 부정 사용 방지에 사용되며, 처리 방식은 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a>과 <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google이 파트너 앱의 정보를 사용하는 방식</a>을 따릅니다. 소음 측정값과 소음 클립은 광고 SDK에 제공되지 않습니다.</p>
+      <h3>광고 선택권</h3>
+      <ul>
+        <li>유럽경제지역(EEA)·영국 등 동의가 필요한 지역에서는 앱 실행 시 맞춤 광고 동의 여부를 묻고, 앱 설정의 “광고 개인정보 설정”에서 언제든 변경할 수 있습니다.</li>
+        <li>기기 설정 &gt; Google &gt; 광고에서 광고 ID를 재설정하거나 삭제해 맞춤 광고를 제한할 수 있습니다.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>3. 권한 사용</h2>
+      <ul>
+        <li><strong>마이크:</strong> 소음 레벨 측정과 소음 클립 저장에 사용합니다. 사용자가 측정 또는 수면 모드를 시작할 때만 사용합니다.</li>
+        <li><strong>알림:</strong> 수면 모드 기록 중 표시와 아침 요약 알림에 사용합니다.</li>
+        <li><strong>포그라운드 서비스(마이크):</strong> 화면이 꺼진 상태에서도 수면 모드 기록을 이어가기 위해 사용하며, 기록 중에는 상단 알림이 항상 표시됩니다.</li>
+        <li><strong>인터넷:</strong> 광고 표시에만 사용합니다.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>4. 보유 기간과 파기</h2>
+      <ul>
+        <li>1초 단위 측정값은 기기에 30일간 보관한 뒤 자동으로 삭제됩니다(설정에서 변경 가능).</li>
+        <li>1분 통계, 충격음 기록, 소음 클립은 사용자가 삭제할 때까지 기기에 보관됩니다.</li>
+        <li>앱 안에서 기록별·전체 삭제가 가능하며, 앱을 삭제하면 모든 데이터가 함께 삭제됩니다.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>5. 제3자 제공과 처리 위탁</h2>
+      <p>개발자는 사용자의 정보를 제3자에게 제공하거나 판매하지 않습니다. 광고 제공을 위해 위 2항에 따라 Google이 정보를 처리합니다.</p>
+      <p>리포트(PDF)나 CSV 파일을 공유하는 것은 사용자가 직접 선택한 앱(메신저, 이메일 등)을 통해 이루어지며, 공유된 이후의 처리는 해당 앱과 수신자의 정책을 따릅니다.</p>
+    </section>
+
+    <section class="card">
+      <h2>6. 녹음 관련 유의사항</h2>
+      <p>소음 클립에는 주변 소리가 함께 녹음될 수 있습니다. 다른 사람의 대화가 녹음되지 않도록 유의해 주시고, 녹음 파일을 다른 사람에게 공유하거나 공개할 때는 관련 법령(통신비밀보호법 등)을 지켜 주세요. 녹음을 원하지 않으면 설정에서 “소음 클립 저장”을 끌 수 있으며, 이 경우 수치와 시각만 기록됩니다.</p>
+    </section>
+
+    <section class="card">
+      <h2>7. 이용자의 권리</h2>
+      <p>이용자는 앱 안에서 언제든 자신의 기록을 확인·삭제할 수 있고, 광고 동의를 변경할 수 있습니다. 개발자는 이용자의 정보를 서버에 보관하지 않으므로, 열람·삭제 요청은 앱 안의 기능으로 바로 처리할 수 있습니다. 그 밖의 문의는 아래 연락처로 보내 주세요.</p>
+    </section>
+
+    <section class="card">
+      <h2>8. 아동의 개인정보</h2>
+      <p>이 앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
+    </section>
+
+    <section class="card">
+      <h2>9. 안전성 확보 조치</h2>
+      <p>모든 측정 데이터는 Android 앱 전용 저장 공간에 보관되어 다른 앱이 접근할 수 없습니다. 측정 데이터를 외부로 전송하는 기능은 없습니다.</p>
+    </section>
+
+    <section class="card">
+      <h2>10. 개인정보 보호책임자 및 문의</h2>
+      <ul>
+        <li>개발자: susuim</li>
+        <li>이메일: <a href="mailto:gou77gou77@gmail.com">gou77gou77@gmail.com</a></li>
+      </ul>
+      <p>개인정보 침해에 관한 상담은 개인정보침해신고센터(privacy.kisa.or.kr, 국번 없이 118), 개인정보분쟁조정위원회(www.kopico.go.kr, 1833-6972)에 문의하실 수 있습니다.</p>
+    </section>
+
+    <section class="card">
+      <h2>11. 방침의 변경</h2>
+      <p>이 방침이 변경되면 이 페이지와 앱 업데이트 안내를 통해 알려드립니다. 변경된 방침은 이 페이지에 게시된 시행일부터 적용됩니다.</p>
+    </section>
+  </main>
+
+  <!-- ===================== English ===================== -->
+  <main id="en" lang="en" hidden>
+    <h1>Noise Log Privacy Policy</h1>
+    <p class="meta">Effective date: 2026-10-30 · Developer: susuim</p>
+
+    <section class="card summary">
+      <h2>At a glance</h2>
+      <ul>
+        <li>Noise measurements and noise clips (recordings) are <strong>stored only on your device</strong> and are never sent to our servers.</li>
+        <li>There is no sign-up or login, and we do not collect your name, phone number, or address.</li>
+        <li>To keep the app free, we show Google AdMob ads. Google may collect device information such as the advertising ID to serve ads.</li>
+        <li>You can delete your records in the app at any time. Uninstalling the app deletes all data stored on your device.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>1. Information we process and why</h2>
+      <div class="table-scroll">
+      <table>
+        <tr><th>Data</th><th>Purpose</th><th>Where it is kept</th></tr>
+        <tr><td>Microphone input (sound)</td><td>Calculating noise levels (dB) in real time</td><td>Processed on the device and discarded immediately. Raw audio is not continuously stored</td></tr>
+        <tr><td>Noise measurements (per-second levels, per-minute statistics, impact events) and timestamps</td><td>Logging noise, checking against reference limits, statistics and reports</td><td>Device storage</td></tr>
+        <tr><td>Noise clips (about 5 seconds before and after an impact sound)</td><td>Letting you listen to and tag noise events</td><td>Device storage. Can be turned off in Settings</td></tr>
+        <tr><td>Settings (reference preset, calibration, language, theme), and tags, notes, or address you enter</td><td>Providing app features and creating reports</td><td>Device storage</td></tr>
+        <tr><td>Device model, OS version, microphone source used</td><td>Recording measurement conditions and calibration (shown in reports)</td><td>Device storage</td></tr>
+      </table>
+      </div>
+      <p>This information is never sent to the developer, and the developer cannot access it. The app is also configured to exclude this data from Android cloud backup.</p>
+    </section>
+
+    <section class="card">
+      <h2>2. Advertising (Google AdMob)</h2>
+      <p>To keep the app free, we show Google AdMob ads on screens such as Records, Statistics, and Reports. No ads are shown on the measurement screen or the sleep mode screen.</p>
+      <p>When serving ads, Google may collect and process:</p>
+      <ul>
+        <li>The advertising ID, device and app information, and approximate location derived from your IP address</li>
+        <li>Ad interactions such as impressions and clicks</li>
+      </ul>
+      <p>This information is used to serve ads, measure ad performance, and prevent fraud, as described in the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites or apps that use its services</a>. Noise measurements and noise clips are never shared with the ad SDK.</p>
+      <h3>Your ad choices</h3>
+      <ul>
+        <li>In regions where consent is required, such as the EEA and the UK, the app asks for your consent to personalized ads, and you can change it anytime under “Ad privacy settings” in the app.</li>
+        <li>You can reset or delete your advertising ID in your device settings (Settings &gt; Google &gt; Ads) to limit personalized ads.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>3. Permissions</h2>
+      <ul>
+        <li><strong>Microphone:</strong> to measure noise levels and save noise clips, only when you start measurement or sleep mode.</li>
+        <li><strong>Notifications:</strong> to show recording status during sleep mode and the morning summary.</li>
+        <li><strong>Foreground service (microphone):</strong> to keep sleep mode recording while the screen is off. A notification is always shown while recording.</li>
+        <li><strong>Internet:</strong> used only to show ads.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>4. Retention and deletion</h2>
+      <ul>
+        <li>Per-second measurements are kept on your device for 30 days and then deleted automatically (adjustable in Settings).</li>
+        <li>Per-minute statistics, impact events, and noise clips are kept on your device until you delete them.</li>
+        <li>You can delete individual records or all data in the app. Uninstalling the app deletes all data.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>5. Sharing with third parties</h2>
+      <p>We do not sell or share your information with third parties. Google processes information for advertising as described in section 2.</p>
+      <p>When you share a PDF report or CSV file, it is sent through an app you choose (messenger, email, etc.). After sharing, the data is handled under the policies of that app and the recipient.</p>
+    </section>
+
+    <section class="card">
+      <h2>6. A note on recordings</h2>
+      <p>Noise clips may capture surrounding sounds. Please avoid recording other people’s private conversations, and follow applicable laws when sharing or publishing recordings. You can turn off “Save noise clips” in Settings, in which case only levels and times are recorded.</p>
+    </section>
+
+    <section class="card">
+      <h2>7. Your rights</h2>
+      <p>You can view and delete your records and change your ad consent in the app at any time. Because we do not store your data on any server, access and deletion requests can be completed directly in the app. For other questions, please contact us below.</p>
+    </section>
+
+    <section class="card">
+      <h2>8. Children</h2>
+      <p>This app is not directed to children under 13 (or under 14 in Korea), and we do not knowingly collect personal information from children.</p>
+    </section>
+
+    <section class="card">
+      <h2>9. Security</h2>
+      <p>All measurement data is kept in the app’s private storage on Android, which other apps cannot access. The app has no feature that transmits measurement data externally.</p>
+    </section>
+
+    <section class="card">
+      <h2>10. Contact</h2>
+      <ul>
+        <li>Developer: susuim</li>
+        <li>Email: <a href="mailto:gou77gou77@gmail.com">gou77gou77@gmail.com</a></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>11. Changes to this policy</h2>
+      <p>If this policy changes, we will post the update on this page and note it in app updates. Changes take effect from the effective date shown on this page.</p>
+    </section>
+  </main>
+
+  <footer>© susuim · 층간소음 기록소 / Noise Log</footer>
+</div>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.lang button');
+    function show(lang) {
+      document.getElementById('ko').hidden = lang !== 'ko';
+      document.getElementById('en').hidden = lang !== 'en';
+      document.documentElement.lang = lang;
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.lang === lang)); });
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () {
+        show(b.dataset.lang);
+        try { history.replaceState(null, '', '#' + b.dataset.lang); } catch (e) {}
+      });
+    });
+    var hash = (location.hash || '').replace('#', '');
+    if (hash === 'ko' || hash === 'en') { show(hash); return; }
+    var nav = (navigator.language || 'ko').toLowerCase();
+    show(nav.indexOf('ko') === 0 ? 'ko' : 'en');
+  })();
+</script>
+</body>
+</html>
